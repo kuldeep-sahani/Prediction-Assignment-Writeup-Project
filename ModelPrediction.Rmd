@@ -30,6 +30,7 @@ Load data to memory.
 training <- read.csv(url(trainUrl), na.strings=c("NA","#DIV/0!",""))  
 testing <- read.csv(url(testUrl), na.strings=c("NA","#DIV/0!",""))
 
+
 Remove variables with near zero variance
 training<-training[,colSums(is.na(training)) == 0]
 testing <-testing[,colSums(is.na(testing)) == 0]
